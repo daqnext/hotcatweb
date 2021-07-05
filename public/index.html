@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+    <link rel="apple-touch-icon" href="../assets/images/logo.svg">
+    <meta name="apple-mobile-web-app-title" content="Flatkit">
+    <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+
+    <meta name="description" content="Web site created using create-react-app"/>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>hotcat live</title>
+
+
+     
+    <link rel="stylesheet" href="./libs/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="./libs/font-awesome/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/app.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+
+  </head>
+
+  <body> 
+    <div class="preloader">
+      <div class="preloaderbody">
+        <div class="imgwrapper">
+          <img src="/assets/images/hotcatlogo.png" width="125" ></img>
+        </div>
+        <div class="loading"><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="text">HOTCAT.LIVE</div>
+      </div>
+    </div>
+    <div id="root"></div>
+  </body>
+
+  <script src="./libs/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="./libs/popper.js/dist/umd/popper.min.js"></script>
+  <script src="./libs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script src="./libs/pace-progress/pace.min.js"></script>
+  <script src="./libs/pjax/pjax.min.js"></script>
+  <script src="./assets/js/lazyload.config.js"></script>
+  <script src="./assets/js/lazyload.js"></script>
+  <script src="./assets/js/plugin.js"></script>
+  <script src="./assets/js/nav.js"></script>
+  <script src="./assets/js/scrollto.js"></script>
+  <script src="./assets/js/toggleclass.js"></script>
+  <script src="./assets/js/theme.js"></script>
+  <script src="./assets/js/ajax.js"></script>
+  <script src="./assets/js/app.js"></script>
+
+
+  <script>
+    $(document).ready(function () {
+      var $preloader = $('.preloader');
+      if($preloader.length) {
+          $preloader.delay(500).fadeOut('slow');
+      }
+    });
+  </script>
+
+</html>
+
+
+ 
